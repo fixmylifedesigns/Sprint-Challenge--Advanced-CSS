@@ -160,12 +160,66 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  width: 100%;
+  margin: 0 auto;
+  align-content: center;
+}
+.navigation header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+@media (max-width: 400px) {
+  .navigation header {
+    flex-direction: column;
+  }
+}
+.navigation header h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.navigation header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+@media (max-width: 400px) {
+  .navigation header nav {
+    flex-direction: column;
+  }
+}
+.navigation header nav a {
+  font-size: 1.6rem;
+  padding-right: 20px;
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
   border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .intro {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +255,8 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .home .walk .walk-text {
   width: 50%;
